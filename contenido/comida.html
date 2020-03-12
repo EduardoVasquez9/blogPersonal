@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    		<meta http-equiv="Content-Language" content="es_HN" />
+    		<title>Comida</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    		<link rel="stylesheet" type="text/css" href="../css/style2.css">
+        <link rel="stylesheet" type="text/css" href="../css/bulma.min.css">
+    		<link rel="stylesheet" type="text/css" href="../css/bulma-carousel.min.css">
+        <script src="../js/jquery.min.js"></script>
+				<script src="../js/bulma-carousel.min.js"></script>
+
+				<!-- Carousel  -->
+				<script>
+					$(document).ready(function(){
+								 var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
+						 });
+				</script>
+
+        <!-- Burger -->
+        <script>
+          $(document).ready(function() {
+          // Check for click events on the navbar burger icon
+          $(".navbar-burger").click(function() {
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              $(".navbar-burger").toggleClass("is-active");
+              $(".navbar-menu").toggleClass("is-active");
+          });
+        });
+        </script>
+
+  </head>
+  <body>
+    <!-- Barra de Navegación dentro de un Hero-->
+    <section class="hero is-small">
+      <div class="hero-head">
+        <nav class="navbar is-info" style="background-color: #242424;">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item"  href="../WebEduardo3.0.html">
+                <img src="../img/m1.png" alt="Logo">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                <span style="color: white"></span>
+                <span style="color: white"></span>
+                <span style="color: white"></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroB" class="navbar-menu is-info">
+              <div class="navbar-end">
+                <a class="navbar-item" href="../WebEduardo3.0.html">
+                  Inicio
+                </a>
+                <a class="navbar-item" href="galeria.html">
+                  Galería
+                </a>
+								<div class="navbar-item has-dropdown is-hoverable" >
+								<a class="navbar-link">
+									Curiosidades
+								</a>
+								<div class="navbar-dropdown is-info" style="background-color: #242424;">
+									<a class="navbar-item" href="#">
+										Comida
+									</a>
+									<a class="navbar-item" href="musica.html">
+										Música
+									</a>
+									<a class="navbar-item">
+										Deportes
+									</a>
+								</div>
+							</div>
+                <a class="navbar-item" href="articulos.html">
+                  Artículos
+                </a>
+                <a class="navbar-item" href="#">
+                  Acerca de
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Contenido -->
+		<div class="cont1" style="position:relative; z-index:1; ">
+			<div class="contenido"style="max-width: 98%">
+				<div id="content" style="z-index:2; padding-top: 2rem;">
+		<div class="columns">
+			<div class="column">
+				<div class='carousel carousel-animated carousel-animate-slide' data-autoplay = "true" data-delay = "4000" style="max-width: 100%; max-height: 600px; padding-top: 10px;">
+					<!--  data-autoplay = "true" data-delay = "4000"  -->
+					<div class='carousel-container' style="max-width: 100%; max-height: 600px;">
+						<div class='carousel-item has-background is-active'>
+							<img class="is-background" src="../img/ba.jpg">
+							<!-- <div class="title">Fortaleza de San Fernando, Omoa, Cortés</div> -->
+						</div>
+						<div class='carousel-item has-background'>
+							<img class="is-background" src="../img/h2.jpg"/>
+							<!-- <div class="title">Catedral de Comayagua, Comayagua</div> -->
+								<!-- <a href="https://wikiki.github.io/components/carousel/" target="_blank">  Fuente del Carousel</a></div> -->
+						</div>
+						<div class='carousel-item has-background'>
+							<img class="is-background" src="../img/ba.jpg"/>
+							<!-- <div class="title">Ruinas de Copán, Copán, Honduras.</div> -->
+						</div>
+						<div class='carousel-item has-background'>
+							<img class="is-background" src="../img/campus.png"/>
+							<!-- <div class="title">Cataratas de Pulhapanzak, Lago de Yojoa.</div> -->
+						</div>
+						<div class='carousel-item has-background'>
+							<img class="is-background" src="../img/ba.jpg"/>
+							<!-- <div class="title">Cayos Cochinos, Islas de la Bahía </div> -->
+						</div>
+					</div>
+					<div class="carousel-navigation is-overlay">
+						<div class="carousel-nav-left">
+							<i class="fa fa-chevron-left" aria-hidden="true"></i>
+						</div>
+						<div class="carousel-nav-right">
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<article class="message is-info" style="margin-top: 10px; margin-bottom: 16px;">
+					<div class="message-body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+					</div>
+				</article>
+			</div>
+		</div>
+		<div class="columns">
+			<div class="column">
+				<article class="message is-success" style="margin-top: 10px; margin-bottom: 16px;">
+					<div class="message-body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+					</div>
+				</article>
+			</div>
+			<div class="column">
+				<div class='carousel carousel-animated carousel-animate-slide' data-autoplay = "true" data-delay = "4000" style="max-width: 100%; max-height: 600px; padding-top: 10px;">
+					<!--  data-autoplay = "true" data-delay = "4000"  -->
+					<div class='carousel-container' style="max-width: 100%; max-height: 600px;">
+						<div class='carousel-item has-background is-active'>
+							<img class="is-background" src="../img/ba.jpg">
+							<!-- <div class="title">Fortaleza de San Fernando, Omoa, Cortés</div> -->
+						</div>
+						<div class='carousel-item has-background'>
+							<img class="is-background" src="../img/h2.jpg"/>
+							<!-- <div class="title">Catedral de Comayagua, Comayagua</div> -->
+								<!-- <a href="https://wikiki.github.io/components/carousel/" target="_blank">  Fuente del Carousel</a></div> -->
+						</div>
+						<div class='carousel-item has-background'>
+							<img class="is-background" src="../img/ba.jpg"/>
+							<!-- <div class="title">Ruinas de Copán, Copán, Honduras.</div> -->
+						</div>
+						<div class='carousel-item has-background'>
+							<img class="is-background" src="../img/campus.png"/>
+							<!-- <div class="title">Cataratas de Pulhapanzak, Lago de Yojoa.</div> -->
+						</div>
+						<div class='carousel-item has-background'>
+							<img class="is-background" src="../img/ba.jpg"/>
+							<!-- <div class="title">Cayos Cochinos, Islas de la Bahía </div> -->
+						</div>
+					</div>
+					<div class="carousel-navigation is-overlay">
+						<div class="carousel-nav-left">
+							<i class="fa fa-chevron-left" aria-hidden="true"></i>
+						</div>
+						<div class="carousel-nav-right">
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer"style="background-color: #0a2b4c; padding: 2.5rem 1.5rem 3rem;">
+      <div class="content has-text-centered" >
+        <p style="color: white">
+          <strong style="color: white">WebEduardo 3.0</strong> by <a href="#" style="color: lightblue">Eduardo Vásquez</a>
+           <br></br>Copyright ©
+           <a href="#" style="color: lightblue">Portales Web III Período 2018</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

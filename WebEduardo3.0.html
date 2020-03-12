@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    		<meta http-equiv="Content-Language" content="es_HN" />
+    		<title>WebEduardo 3.0</title>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+    		<link rel="stylesheet" type="text/css" href="css/style2.css">
+        <link rel="stylesheet" type="text/css" href="css/bulma.min.css">
+    		<link rel="stylesheet" type="text/css" href="css/bulma-carousel.min.css">
+    		<script src="js/jquery.min.js"></script>
+				<script src="/js/bulma-carousel.min.js"></script>
+
+				<!-- Carousel  -->
+				<script>
+					$(document).ready(function(){
+								 var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
+						 });
+				</script>
+
+				<!-- Burger -->
+				<script>
+					$(document).ready(function() {
+				  // Check for click events on the navbar burger icon
+				  $(".navbar-burger").click(function() {
+				      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+				      $(".navbar-burger").toggleClass("is-active");
+				      $(".navbar-menu").toggleClass("is-active");
+				  });
+				});
+				</script>
+
+				<!-- Notificaciones -->
+				<script>
+						$(document).on('click', '.notification > button.delete', function() {
+				    $(this).parent().addClass('is-hidden');
+				    return false;
+				});
+				</script>
+
+				<!-- Quitar Scroll de pantalla -->
+				<script type="text/javascript">
+			    $(document).ready(function() {
+			       var myElement = $('#bajar');
+			       $(window).on('scroll', function () {
+			         var st = $(this).scrollTop();
+			         myElement.css({
+			            'opacity': 1 - st / 360
+			         });
+			      });
+			    });
+			</script>
+  </head>
+    <body>
+      <!-- Barra de Navegación dentro de un Hero-->
+			<section class="hero is-large" style="background-color: #0a2b4c">
+			  <div class="hero-head">
+			    <nav class="navbar is-info">
+			      <div class="container">
+			        <div class="navbar-brand">
+			          <a class="navbar-item" href="#">
+			            <img src="./img/m1.png" alt="Logo">
+			          </a>
+			          <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+			            <span style="color:white"></span>
+			            <span style="color:white"></span>
+			            <span style="color:white"></span>
+			          </span>
+			        </div>
+			        <div id="navbarMenuHeroB" class="navbar-menu is-info">
+			          <div class="navbar-end">
+			            <a class="navbar-item">
+			              Inicio
+			            </a>
+			            <a class="navbar-item" href="./contenido/galeria.html">
+			              Galería
+			            </a>
+									<div class="navbar-item has-dropdown is-hoverable" >
+									<a class="navbar-link">
+	                  Curiosidades
+	                </a>
+									<div class="navbar-dropdown is-info" style="background-color: #0a2b4c">
+										<a class="navbar-item"  href="./contenido/comida.html">
+											Comida
+										</a>
+										<a class="navbar-item" href="./contenido/musica.html">
+											Música
+										</a>
+										<a class="navbar-item">
+											Deportes
+										</a>
+									</div>
+								</div>
+									<a class="navbar-item"href="./contenido/articulos.html">
+			              Artículos
+			            </a>
+			            <a class="navbar-item" href="./contenido/about.html">
+			              Acerca de
+			            </a>
+			          </div>
+			        </div>
+			      </div>
+			    </nav>
+			  </div>
+
+			  <div class="hero-body">
+			    <div class="container has-text-centered">
+			      <img src="./img/m2.png" id="imglogo" style="margin-top:-30">
+			      <p class="subtitle" id="imSUB">
+			        WebEduardo 3.0 por mientras se me ocurra algo mejor...
+			      </p>
+			    </div>
+			  </div>
+			</section>
+			<div class="notification" id="bajar" style="padding: 10px; z-index:100; position: relative; float: right; max-width: 60%; align-self: flex-end; margin-top:-210px; margin-right: 48px;">
+				<!-- <button class="delete"></button> -->
+				<i class="fa fa-arrow-down" aria-hidden="true"></i>
+			</div>
+
+				<!-- Contenido -->
+				<div class="cont1" style="position:relative; z-index:1; ">
+					<div class="contenido"style="max-width: 98%">
+							<figure class="image">
+							  <img class="is-rounded" src="./img/fc1.jpg" id="arribita">
+							</figure>
+						<div id="content" style="z-index:2">
+							<article class="message is-info" style="margin-top: 12px; margin-bottom: 16px;">
+                <div class="message-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                </div>
+              </article>
+						</div>
+						<div class="cont1" style="position:relative; z-index:1; ">
+							<div class="contenido"style="max-width: 98%">
+								<div id="content" style="max-width: 97%; padding-top: 48px;">
+				          <div class="columns">
+				            <div class="column">
+											
+				            </div>
+				            <div class="column">
+				              <article class="message is-success" style=" margin-bottom: 16px;">
+				                <div class="message-body">
+				                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+				                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+				                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+													 <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+				                </div>
+				              </article>
+				            </div>
+				          </div>
+				        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer -->
+				<footer class="footer" style=" background-color: #0a2b4c; padding: 2.5rem 1.5rem 3rem;">
+				  <div class="content has-text-centered" style=" background-color: #0a2b4c; color:white">
+				    <p >
+				      <strong style="color:white">WebEduardo 3.0</strong> by <a href="#" style="color:lightblue">Eduardo Vásquez</a>
+							 <br></br>Copyright ©
+							 <a href="#" style="color:lightblue">Portales Web III Período 2018</a>
+				    </p>
+				  </div>
+				</footer>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    		<meta http-equiv="Content-Language" content="es_HN" />
+    		<title>Música</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    		<link rel="stylesheet" type="text/css" href="../css/style2.css">
+        <link rel="stylesheet" type="text/css" href="../css/bulma.min.css">
+    		<link rel="stylesheet" type="text/css" href="../css/bulma-carousel.min.css">
+        <script src="../js/jquery.min.js"></script>
+
+        <!-- Burger -->
+        <script>
+          $(document).ready(function() {
+          // Check for click events on the navbar burger icon
+          $(".navbar-burger").click(function() {
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              $(".navbar-burger").toggleClass("is-active");
+              $(".navbar-menu").toggleClass("is-active");
+          });
+        });
+        </script>
+  </head>
+  <body style="background-color:#242424;">
+    <!-- Barra de Navegación dentro de un Hero-->
+    <section class="hero is-small">
+      <div class="hero-head">
+        <nav class="navbar is-info" style="background-color: #242424;">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item"  href="../WebEduardo3.0.html">
+                <img src="../img/m1.png" alt="Logo">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                <span style="color: white"></span>
+                <span style="color: white"></span>
+                <span style="color: white"></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroB" class="navbar-menu is-info">
+              <div class="navbar-end">
+                <a class="navbar-item" href="../WebEduardo3.0.html">
+                  Inicio
+                </a>
+                <a class="navbar-item" href="galeria.html">
+                  Galería
+                </a>
+								<div class="navbar-item has-dropdown is-hoverable" >
+								<a class="navbar-link">
+									Curiosidades
+								</a>
+								<div class="navbar-dropdown is-info" style="background-color: #242424;">
+									<a class="navbar-item" href="comida.html">
+										Comida
+									</a>
+									<a class="navbar-item" href="#">
+										Música
+									</a>
+									<a class="navbar-item">
+										Deportes
+									</a>
+								</div>
+							</div>
+                <a class="navbar-item" href="articulos.html">
+                  Artículos
+                </a>
+                <a class="navbar-item" href="about.html">
+                  Acerca de
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+			<!-- Contenido -->
+			<div class="cont1" style="position:relative; z-index:1; background-color: #242424; height: fit-content;">
+				<div class="contenidoA"style="max-width: 95%; margin-top: 10px;">
+					<div id="content" style="max-width: 100%; padding-top: 1rem;">
+						<h1 class="title">Canciones</h1>
+						<div>
+							<iframe src="https://open.spotify.com/embed/artist/407pHQytUNjAXT1tm0AyzY" width="100%" height="400px" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe>
+						</div>
+						<!-- Videos -->
+						<div class="columns" style="padding-top: 10px;">
+						  <div class="column">
+								<iframe width="100%" height="200px" style="margin: 0 auto;"
+								src="https://www.youtube.com/embed/UX4RqqwCAmc">
+							</iframe>
+						  </div>
+						  <div class="column">
+								<iframe width="100%" height="200px" style="margin: 0 auto;"
+								src="https://www.youtube.com/embed/uqG3vCLxME0">
+							</iframe>
+						  </div>
+						  <div class="column">
+								<iframe width="100%" height="200px" style="margin: 0 auto;"
+								src="https://www.youtube.com/embed/L06aG2sw4cs">
+							</iframe>
+						  </div>
+						</div>
+						<div class="columns" style="padding-top: 10px;">
+							<div class="column is-auto">
+								<iframe width="100%" height="400px" style="margin: 0 auto;"
+								src="https://www.youtube.com/embed/NtE63VV8eM0">
+							</iframe>
+							</div>
+							<div class="column is-one-third">
+								<article class="message is-success">
+	                <div class="message-body" style="color: black">
+										<strong>GRUPO KAZZABE</strong> es una de las agrupaciones más importantes del genero tropical Punta, aunque como agrupación es un grupo completo que tanto en tarima como en sus producciones nos presentan un sin número
+										de temas no, solo de punta pero con estilos KAZZABE.
+										Se forma como agrupación y se presenta en tarima por primera vez un 22 de febrero de 1996 en su tierra natal, San Pedro Sula, Honduras.
+										Con el padrinaje de agrupaciones internacionales como SILVER STAR, y LOS ROLAND, el proyecto empezó con el pie derecho y desde ese momento KAZZABE se ha convertido en una de las atracciones principales en el ámbito de
+										presentaciones en lugares como Estados Unidos, Guatemala, El Salvador, y en su querida Honduras.
+										<a href="https://www.buenamusica.com/kazzabe/biografia" target="_blank" style="color: darkgreen">Fuente</a>
+	                </div>
+	              </article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+    <!-- Footer -->
+    <footer class="footer"style="background-color: #0a2b4c; padding: 2.5rem 1.5rem 3rem;">
+      <div class="content has-text-centered" >
+        <p style="color: white">
+          <strong style="color: white">WebEduardo 3.0</strong> by <a href="#" style="color: lightblue">Eduardo Vásquez</a>
+           <br></br>Copyright ©
+           <a href="#" style="color: lightblue">Portales Web III Período 2018</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

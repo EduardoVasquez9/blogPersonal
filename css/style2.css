@@ -1,0 +1,352 @@
+/* Estilo un poco mejorado para maqueta - Eduardo Vásquez*/
+/* Diseño */
+body{
+  background-color: #0a2b4c;
+  font-family: myFont;
+  overflow-y:hidden;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(X360 by Redge Norm.ttf);
+}
+
+.hero-body{
+  margin: 0 auto;
+  height: 110vh;
+  align-items: center;
+  max-width: 95%;
+  color: white;
+}
+
+.hero .subtitle {
+    color: white;
+    font-size: 1.30rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+/*
+#imglogo:hover{
+  transition: transform .2s;
+  transform: scale(1.1);
+} */
+
+#imSUB:hover{
+  transition: transform .2s;
+  transform: scale(1.1);
+}
+
+#arribita{
+  margin-top: -256px;
+  z-index:5;
+  margin-left: 31%;
+  margin-right: 50%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  position: absolute;
+  transform: scale(0.50);
+  border: 5px solid white;
+}
+
+#arribita2{
+  margin-top:-235px;
+  z-index:5;
+  margin-left: 31%;
+  margin-right: 50%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  position: absolute;
+  transform: scale(0.50);
+  border: 5px solid #0a2b4c;
+}
+
+#arribita:hover{
+  transform: scale(0.55);
+  border: 7px solid #0a2b4c;
+}
+
+#arribita2:hover{
+  transform: scale(0.55);
+  border: 7px solid #0a2b4c;
+}
+
+@-webkit-keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@-webkit-keyframes grow {
+    0% {
+        -webkit-transform:scale(1);
+    }
+    50% {
+        -webkit-transform:scale(1.05);
+    }
+    100%{
+        -webkit-transform:scale(1);
+    }
+}
+
+#bajar{
+  overflow: hidden;
+  animation: float 0.85s ease-in-out infinite;
+  img { width: 100%; height: auto; }
+}
+
+#imglogo {
+	overflow: hidden;
+	animation: grow 3s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+a.navbar-link, a.navbar-item {
+    cursor: pointer;
+    color: white;
+}
+
+.hero .navbar-menu {
+    background-color: transparent;
+}
+
+
+.cont1{
+  background-color: #242424;
+  height: -webkit-fit-content;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin: 0 auto;
+}
+
+.contenido{
+	width: 1392px;
+	max-width: 100%;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+.contenidoA{
+	width: 1392px;
+	max-width: 100%;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+#content{
+  max-width: 95%;
+  padding-top: 9rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.contenido p{
+  padding-top: 20px;
+}
+
+/* clase para imagenes*/
+.responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 958px){
+  .hero-body{
+    height: 20vh;
+    padding-top: 1rem;
+  }
+  #arribita{
+    transform: scale(0.25);
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -245px;
+  }
+  #arribita2{
+   transform: scale(0.30);
+   position: absolute;
+   margin-left: 21.5%;
+   margin-top: -290px;
+   z-index: 100;
+ }
+  #arribita:hover{
+    transform: scale(0.30);
+    border: 7px solid white;
+  }
+  #arribita2:hover{
+   transform: scale(0.35);
+   border: 7px solid #0a2b4c;
+ }
+  #imSUB{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  #content{
+      padding-top: 4rem;
+  }
+  #bajar{
+    display: none;
+  }
+  .contenidoA{
+    z-index: -1;
+    max-width: 95%;
+    margin-top: 60px;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    background-color: white;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 512px){
+  .hero-body{
+    height: 30vh;
+    padding-top: 3rem;
+  }
+  #arribita{
+    transform: scale(0.25);
+    position: absolute;
+    margin-left: 0.5%;
+    margin-top: -245px;
+  }
+  #arribita2{
+   transform: scale(0.35);
+   position: absolute;
+   margin-left: 0.5%;
+   margin-top: -230px;
+ }
+  #arribita:hover{
+    transform: scale(0.30);
+    border: 7px solid white;
+  }
+  #arribita2:hover{
+   transform: scale(0.40);
+   border: 7px solid #0a2b4c;
+ }
+  #imSUB{
+    font-size: 16px;
+  }
+  #content{
+      padding-top: 4rem;
+  }
+  #bajar{
+    display: none;
+  }
+  .contenidoA{
+    z-index: -1;
+    max-width: 95%;
+    margin-top: 60px;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    background-color: white;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .hero-body{
+    height: 30vh;
+    padding-top: 3rem;
+  }
+  #arribita{
+    transform: scale(0.25);
+    position: absolute;
+    margin-left: 0.5%;
+    margin-top: -230px;
+  }
+  #arribita2{
+   transform: scale(0.30);
+   position: absolute;
+   margin-left: 0.5%;
+   margin-top: -235px;
+ }
+  #arribita:hover{
+    transform: scale(0.30);
+    border: 7px solid white;
+  }
+  #arribita2:hover{
+   transform: scale(0.35);
+   border: 7px solid #0a2b4c;
+ }
+  #imSUB{
+    font-size: 16px;
+  }
+  #content{
+      padding-top: 4rem;
+  }
+  #bajar{
+    display: none;
+  }
+  .contenidoA{
+    z-index: -1;
+    max-width: 95%;
+    margin-top: 60px;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    background-color: white;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .hero-body{
+    height: 30vh;
+  }
+  #arribita{
+    transform: scale(0.20);
+    position: absolute;
+    margin-left: 0.5%;
+    margin-top: -290px;
+  }
+  #arribita2{
+   transform: scale(0.25);
+   position: absolute;
+   margin-left: 0.5%;
+   margin-top: -190px;
+ }
+  #arribita:hover{
+    transform: scale(0.25);
+    border: 7px solid white;
+  }
+  #arribita2:hover{
+   transform: scale(0.30);
+   border: 7px solid #0a2b4c;
+ }
+  #imSUB{
+    font-size: 16px;
+  }
+  #content{
+      padding-top: 4rem;
+  }
+  #bajar{
+    display: none;
+  }
+  .contenidoA{
+    z-index: -1;
+    max-width: 95%;
+    margin-top: 5px;
+    padding-top: 2px;;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    background-color: white;
+    box-sizing: border-box;
+  }
+}

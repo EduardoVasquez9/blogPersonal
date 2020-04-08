@@ -6,3 +6,5 @@ Blog para publicación de anécdotas, comentarios, recetas, recomendaciones.
 -- Bulma CSS y Javascript para BugerNav y efectos, algunos efectos fueron hechos a puro CSS.
 
 -- Primer prueba de diseño, no contiene más funcionaldiad que navegación y los efectos en algunos componentes... 
+
+-- Este es el cambio en el dia 7-4-2020

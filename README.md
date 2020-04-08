@@ -7,4 +7,4 @@ Blog para publicación de anécdotas, comentarios, recetas, recomendaciones.
 
 -- Primer prueba de diseño, no contiene más funcionaldiad que navegación y los efectos en algunos componentes... 
 
--- Este es el cambio en el dia 7-4-2020
+-- Este es el comentario en el dia 7-4-2020
